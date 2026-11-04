@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#070713">
+<title>IQ Panel — A3M TEAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<!-- تعریف گرادیان‌ها و الگوها (مشترک برای همه‌ی SVGها) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset=".55" stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <pattern id="stripe" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="none"/><line x1="0" y1="0" x2="0" y2="8" stroke="#a78bfa" stroke-width="4"/></pattern>
+  </defs>
+</svg>
+
+<div class="bg"><i></i><i></i><i></i></div>
+
+<div id="splash">
+  <div class="logo">
+    <div class="ring-spin"></div>
+    <svg viewBox="0 0 150 150">
+      <polygon class="hex2" points="75,13 128.7,44 128.7,106 75,137 21.3,106 21.3,44"/>
+      <polygon class="hex" points="75,13 128.7,44 128.7,106 75,137 21.3,106 21.3,44"/>
+      <text x="75" y="91" text-anchor="middle">IQ</text>
+    </svg>
+  </div>
+  <div class="brand"><b>A3M</b> TEAM</div>
+  <div class="mut" style="animation:fadeUp 1s .8s both">در حال آماده‌سازی…</div>
+</div>
+
+<main id="app"></main>
+<nav id="nav" class="hide"></nav>
+<div id="toasts"></div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="questions.js?v=1"></script>
+<script src="engine.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
